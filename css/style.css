@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;1,300&display=swap');
-
 .header {
     display: flex;
     flex-direction: column;
@@ -107,18 +104,17 @@
     font-family: 'montserrat', arial;
     font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
     color: rgb(57, 58, 60);
 }
 
 .descricao {
     width: 100%;
     padding: 15px;
-
-    font-family: 'montserrat';
+    font-family: 'Nunito Sans', arial;
     font-weight: light;
     font-style: italic;
     text-align: center;
-
     color: rgb(57, 58, 60);
 }
 
@@ -156,7 +152,7 @@
 .div-video p {
     margin: 10px;
     width: 80%;
-    font-family: 'montserrat';
+    font-family: 'Nunito Sans', arial;
     text-align: center;
     color: rgb(57, 58, 60);
 }
