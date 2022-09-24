@@ -4,235 +4,545 @@
     box-sizing: border-box;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border-bottom: 7px solid rgb(3, 119, 186);
+html {
+
+    scroll-behavior: smooth;
+    /* Aparentemente não está funcionando, professor. */
+
 }
 
-.navheader {
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-    justify-content: space-evenly;
-}
+/* HEADER */
 
-.navheader a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 08px;
+header {
+
+    background-color: aliceblue;
+    display: flex;
     width: 100%;
+    height: 11vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+
+    height: 75%;
+    padding-left: 22px;
+
+}
+
+.nav-header {
+
     display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color: rgb(245, 245, 245);
-    border-radius: 7px;
-    font-family: 'montserrat', arial;
-    font-weight: 550;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+
+}
+
+.nav-header a {
+
+    display: flex;
+    margin: 5px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    color: rgb(33, 158, 188);
+    font-family: 'Montserrat', arial;
+    font-size: 14px;
+    font-weight: 580;
     text-decoration: none;
-    color: rgb(57, 58, 60);
-    transition-duration: 250ms;
+
+    border-radius: 50px;
+    transition: 350ms;
+
 }
 
-.navheader a:hover {
-    background-color: rgb(3, 119, 186);
-    color: white;
-    scale: 1.03;
+.nav-header a:first-of-type {
+
+    color: rgb(251, 133, 0);
+
 }
 
-.background {
-    height: 255px;
+.nav-header a:hover {
+
+    background-color: rgb(2, 48, 71);
+    color: rgb(142, 202, 230);
+    transform: scale(1.05);
+
+}
+
+/* FIM DO HEADER */
+
+/* MAIN */
+
+main {
+
+    background-color: aliceblue;
+
+}
+
+.banner {
+
     display: flex;
-    background-color: black;
-    background-image: url(https://images.pexels.com/photos/12989844/pexels-photo-12989844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-repeat: no-repeat;
-    background-position: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-image: url(../img/Banner\ Fundo\ -\ Mobile.jpg);
     background-size: cover;
+    background-position: center center;
+
 }
 
-.main {
-    margin-bottom: 10px;
-}
+.corfundo {
 
-.curiosidades {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    font-family: 'montserrat', arial;
-    font-weight: bolder;
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(57, 58, 60);
-}
-
-.section-curiosidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
+    height: 100%;
+    width: 100%;
 
-#card {
-    display: flex;
-    width: 70%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    background-color: rgb(232, 232, 232);
-    border-top: 12px solid rgb(3, 119, 186);
-}
+    background-color: rgba(14, 53, 62, 0.59);
+    color: aliceblue;
 
-#imgcuriosidades {
-    max-width: 100%;
-    border-radius: 15px;
 }
 
 .titulo {
-    padding: 10px;
+
+    margin-left: 35px;
     font-family: 'montserrat', arial;
+    color: rgb(251, 133, 0);
+    font-size: 35px;
+
+}
+
+.subtitulo {
+
+    margin-left: 35px;
+    margin-right: 35px;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', arial;
     font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(57, 58, 60);
+
+    text-align: justify;
+
 }
 
-.descricao {
+.form-banner {
+
+    display: flex;
+    justify-content: left;
     width: 100%;
-    padding: 15px;
-    font-family: 'Nunito Sans', arial;
-    font-weight: light;
-    font-style: italic;
-    text-align: center;
-    color: rgb(57, 58, 60);
+
 }
 
-.button-cards {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    height: 40px;
-    width: 100px;
-    color: rgb(3, 119, 186);
-    background-color: rgb(216, 216, 216);
+.explorar {
+
+    width: 100%;
+    margin: 10px 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
     border-style: none;
-    border-radius: 100px;
-    cursor: pointer;
-    transition-duration: 200ms;
+    border-radius: 5px;
+
+    font-family: 'Quicksand', arial;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: aliceblue;
+    background-color: rgb(251, 133, 0);
+
+    transition: 250ms;
+
 }
 
-.button-cards:hover {
-    background-color: rgb(3, 119, 186);
-    color: white;
-    scale: 1.03;
+.explorar:hover {
+    transform: scale(1.05);
 }
 
-.section-vid {
+.img-fundo {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+/* DESTINOS */
+
+.destinos {
+
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-
-.div-video {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.div-video p {
-    margin: 10px;
-    width: 80%;
-    font-family: 'Nunito Sans', arial;
-    text-align: center;
-    color: rgb(57, 58, 60);
-}
-
-.titulo-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
     font-family: 'montserrat', arial;
-    color: rgb(57, 58, 60);
+    color: rgb(33, 158, 188);
+
 }
 
-.video {
-    width: 85%;
-    border-radius: 05px;
-    border: 7px solid rgb(3, 119, 186);
+.container {
+
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 16.66% repeat(4 16.66%);
+
+    grid-template-areas:
+        "pisa"
+        "tokyo"
+        "maldivas"
+        "paris"
+        "rio"
+        "interlaken"
+    ;
+
 }
 
-.footer {
-    margin-top: 50px;
-    border-top: 13px solid rgb(228, 228, 228);
-    background-color: rgb(3, 119, 186);
+.imagemcit {
+
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+
 }
 
-.nav-footer a {
+.pisa {
+
     display: flex;
+    flex-direction: column;
+    margin: 45px;
+
+    background-color: rgb(33, 158, 188);
+    border-radius: 29px;
+    border-bottom: solid 6px rgba(2, 48, 71, 0.766);
+
+    grid-area: pisa;
+
+    transition: 250ms;
+
+}
+
+.pisa:hover {
+
+    transform: scale(1.05);
+
+}
+
+.tokyo {
+
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+
+    background-color: rgb(33, 158, 188);
+    border-radius: 29px;
+    border-bottom: solid 6px rgba(2, 48, 71, 0.766);
+
+    grid-area: tokyo;
+
+    transition: 250ms;
+
+}
+
+.tokyo:hover {
+
+    transform: scale(1.05);
+
+}
+
+.maldivas {
+
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+
+    background-color: rgb(33, 158, 188);
+    border-radius: 29px;
+    border-bottom: solid 6px rgba(2, 48, 71, 0.766);
+
+    grid-area: maldivas;
+
+    transition: 250ms;
+
+}
+
+.maldivas:hover {
+
+    transform: scale(1.05);
+
+}
+
+.paris {
+
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+
+    background-color: rgb(33, 158, 188);
+    border-radius: 29px;
+    border-bottom: solid 6px rgba(2, 48, 71, 0.766);
+
+    grid-area: paris;
+
+    transition: 250ms;
+
+}
+
+.paris:hover {
+
+    transform: scale(1.05);
+
+}
+
+.rio {
+
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+
+    background-color: rgb(33, 158, 188);
+    border-radius: 29px;
+    border-bottom: solid 6px rgba(2, 48, 71, 0.766);
+
+    grid-area: rio;
+
+    transition: 250ms;
+
+}
+
+.rio:hover {
+
+    transform: scale(1.05);
+
+}
+
+.interlaken {
+
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+
+    background-color: rgb(33, 158, 188);
+    border-radius: 29px;
+    border-bottom: solid 6px rgba(2, 48, 71, 0.766);
+
+    grid-area: interlaken;
+
+    transition: 250ms;
+
+}
+
+.interlaken:hover {
+
+    transform: scale(1.05);
+
+}
+
+.titulocidade {
+
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 10px 5px 10px;
+
+    font-family: 'montserrat';
+    color: aliceblue;
+
+}
+
+.titulocidade h4 {
+
+    margin-left: 4px;
+    font-weight: 550;
+
+}
+
+.descricao {
+
+    flex-wrap: wrap;
+    margin: 0px 10px 0px 10px;
+
+    font-family: 'quicksand', arial;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(2, 48, 71);
+
+}
+
+.formcard {
+
+    display: flex;
+    width: 100%;
     justify-content: center;
+
+}
+
+.botaocard {
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px 0px 8px 0px;
+
+    border-style: none;
+    border-radius: 25px;
+
+    font-family: 'montserrat', arial;
+    font-weight: 600;
+    background-color: aliceblue;
+    color: rgb(2, 48, 71);
+}
+
+.botaocard:hover {
+    background-color: rgb(251, 133, 0);
+    color: aliceblue;
+}
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+
+    font-family: 'motserrat', arial;
+    background-color: rgb(2, 48, 71);
+    color: aliceblue;
+
+}
+
+footer p {
+
+    font-family: 'Quicksand', arial;
+    font-size: 15px;
+
+}
+
+.nav-footer {
+
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+
 }
 
 .logogit {
-    width: 20%;
-    border: 2px solid white;
-    border-radius: 50px;
-    margin-top: 15px;
-    transition-duration: 250ms;
+
+    margin-left: 25px;
+    margin-bottom: 10px;
+    width: 8vh;
+
+    transition: 250ms;
+
 }
 
 .logogit:hover {
-    scale: 1.06;
+
+    transform: scale(1.05);
+
 }
 
-.github {
+.date {
+
     display: flex;
     justify-content: center;
-    padding-bottom: 10px;
-    margin-top: 5px;
-    font-family: 'montserrat', arial;
-    font-size: 20px;
-    color: white;
+    margin-bottom: 10px;
+
+    font-weight: lighter;
+    font-size: 12px;
+
 }
 
-@media (min-width: 1280px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-around;
+@media (min-width: 1440px) {
+
+    .banner{
+        background-attachment: fixed;
     }
 
-    .navheader {
-        width: 50%;
-        flex-wrap: nowrap;
-        margin-bottom: 0px;
+    .nav-header a {
+        font-size: 22px;
     }
 
-    .background {
-        height: 480px;
+    .nav-header a:hover {
+
+        transform: scale(1.05);
+
     }
 
-    .navheader a {
-        width: 40%;
-        margin-left: 20px;
-        margin-right: 20px;
+    .caixa-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 65%;
     }
 
-    .section-curiosidades {
-        flex-direction: row;
-        align-items: flex-start;
+    .titulo {
+        font-size: 65px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    .form-banner {
+        justify-content: center;
+    }
+
+    .explorar {
+        width: 30%;
+        margin-top: 35px;
+        padding: 20px;
+
+        border-radius: 15px;
+
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .container {
+        display: grid;
+
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+
+        justify-content: center;
+
+        grid-template-areas:
+            "pisa tokyo maldivas"
+            "paris rio interlaken"
+        ;
+
+    }
+
+    .pisa {
+        grid-area: pisa;
+    }
+
+    footer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
     }
 
     .logogit {
-        width: 08%;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
     }
 }

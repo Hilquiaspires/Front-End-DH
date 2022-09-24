@@ -6,143 +6,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 02</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,700&family=Nunito+Sans:ital,wght@0,200;0,400;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>Checkpoint 01</title>
 
 </head>
 
 <body>
-    <header class="header">
 
-        <img class="logo" src="./img/logo estado da bahia.jpg" alt="Logo Estado da Bahia">
+    <header>
 
-        <nav class="navheader">
-            <a href="#curiosidades">Curiosidades</a>
-            <a href="#video">Vídeo</a>
-            <a href="#sobre-nos">Sobre Nós</a>
+        <img class="logo" src="./img/logo.png" alt="Logo DH Travel">
+
+        <nav class="nav-header">
+
+            <a href="#home">Home</a>
+            <a href="#itens">Itens</a>
+            <a href="">Login</a>
+            <a href="#sobrenos">Sobre nós</a>
+
         </nav>
 
     </header>
 
-    <main class="main">
+    <main>
 
-        <section class="background"></section>
+        <section id="home" class="banner">
 
-        <h1 id="curiosidades" class="curiosidades">Curiosidades da Bahia</h1>
+            <div class="corfundo">
+                <div class="caixa-banner">
+                    <h1 class="titulo">DH Travel</h1>
 
-        <section class="section-curiosidades">
+                    <h3 class="subtitulo">Confira os melhores lugares para viajar, com o preço que cabem em seu bolso.
+                    </h3>
 
-            <div id="card">
+                    <form class="form-banner" target="blank" action="#">
 
-                <h3 class="titulo">Salvador</h3>
+                        <button class="explorar" type="submit">
+                            Explorar
+                        </button>
 
-                <img id="imgcuriosidades" src="./img/Curiosidade 1 Salvador.jpg" alt="Imagem de Salvador">
-
-                <p class="descricao">Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da
-                    Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia, música e
-                    arquitetura,[7] reconhecidas também internacionalmente. A influência africana em muitos aspectos
-                    culturais da cidade a torna o centro da cultura afro-brasileira.</p>
-
-                <form target="blank" action="https://pt.wikipedia.org/wiki/Salvador">
-
-                    <button class="button-cards" type="submit">
-                        Saiba mais
-                    </button>
-
-                </form>
-
-            </div>
-
-            <div id="card">
-
-                <h3 class="titulo">Porto-Seguro</h3>
-
-                <img id="imgcuriosidades" src="./img/Curiosidade 1 Porto Seguro.jpg" alt="Imagem de Porto-Seguro">
-
-                <p class="descricao">Porto Seguro (região inicialmente chamada Nhoesembé) é um município situado no sul
-                    do estado da Bahia, no Brasil. Compartilha, com os municípios limítrofes de Santa Cruz Cabrália e
-                    Prado, a primazia de ser o local de chegada dos portugueses ao Brasil em 1500. O vilarejo que deu
-                    origem ao município de Porto Seguro foi fundado em 1535 e está tombado em quase sua totalidade pelo
-                    patrimônio histórico, não sendo permitida a construção de prédios altos (com mais de dois andares).
-                </p>
-
-                <form target="blank" action="https://pt.wikipedia.org/wiki/Porto_Seguro">
-
-                    <button class="button-cards" type="submit">
-                        Saiba mais
-                    </button>
-
-                </form>
-
-            </div>
-
-            <div id="card">
-
-                <h3 class="titulo">Chapada de Diamantina</h3>
-
-                <img id="imgcuriosidades" src="./img/Curiosidade 1 Chapa Diamantina.jpg"
-                    alt="Imagem de Chapada de Diamantina">
-
-                <p class="descricao">Chapada Diamantina é uma região de serras, protegida na categoria de parque
-                    nacional, situada no centro do estado brasileiro da Bahia, onde nascem quase todos os rios das
-                    bacias do Paraguaçu, do Jacuípe e do Rio de Contas. Estas correntes de águas brotam nos cumes e
-                    deslizam pelo relevo em belos regatos, despencam em borbulhantes cachoeiras e formam transparentes
-                    piscinas naturais.</p>
-
-                <form target="blank" action="https://pt.wikipedia.org/wiki/Chapada_Diamantina">
-
-                    <button class="button-cards" type="submit">
-                        Saiba mais
-                    </button>
-
-                </form>
-
+                    </form>
+                </div>
             </div>
 
         </section>
 
-        <section class="section-vid">
+        <h2 id="itens" class="destinos">Destinos</h2>
 
-            <div class="div-video">
+        <section class="container">
 
-                <h2 id="video" class="titulo-video">Vídeo</h2>
+            <div class="pisa">
+                <img class="imagemcit" src="./img/Pisa.jpg" alt="Imagem Pisa">
+                <div class="titulocidade">
+                    <h3>Pisa,</h3>
+                    <h4>Itália</h4>
+                </div>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quis.</p>
+                <form class="formcard" target="blank" action="#">
 
-                <video class="video" controls id="videos" src="./vid/VALORANT _ Raze_ A Cor da Cidade.mp4"
-                    type="video/mp4">
-                    Desculpe, seu navegador não suporta vídeos.
-                </video>
+                    <button class="botaocard" type="submit">
+                        Abrir
+                    </button>
 
-                <p>"O vídeo acima mostra o lançamento de uma personagem do jogo "Valorant" a qual pertence a Bahia. Em
-                    sua história conhecemos um pouco sobre a capital Salvador."</p>
+                </form>
+            </div>
 
+            <div class="tokyo">
+                <img class="imagemcit" src="./img/Tokyo.jpg" alt="Imagem Tokyo">
+                <div class="titulocidade">
+                    <h3>Tokyo,</h3>
+                    <h4>Japão</h4>
+                </div>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quis.</p>
+                <form class="formcard" target="blank" action="#">
+
+                    <button class="botaocard" type="submit">
+                        Abrir
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="maldivas">
+                <img class="imagemcit" src="./img/Maldivas.jpg" alt="Imagem Pisa">
+                <div class="titulocidade">
+                    <h3>Maldivas,</h3>
+                    <h4>India</h4>
+                </div>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quis.</p>
+                <form class="formcard" target="blank" action="#">
+
+                    <button class="botaocard" type="submit">
+                        Abrir
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="paris">
+                <img class="imagemcit" src="./img/Paris.jpg" alt="Imagem Paris">
+                <div class="titulocidade">
+                    <h3>Paris,</h3>
+                    <h4>França</h4>
+                </div>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quis.</p>
+                <form class="formcard" target="blank" action="#">
+
+                    <button class="botaocard" type="submit">
+                        Abrir
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="rio">
+                <img class="imagemcit" src="./img/Rio.jpg" alt="Imagem Rio de Janeiro">
+                <div class="titulocidade">
+                    <h3>Rio,</h3>
+                    <h4>Brasil</h4>
+                </div>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quis.</p>
+                <form class="formcard" target="blank" action="#">
+
+                    <button class="botaocard" type="submit">
+                        Abrir
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="interlaken">
+                <img class="imagemcit" src="./img/Interlaken.jpg" alt="Imagem Pisa">
+                <div class="titulocidade">
+                    <h3>Interlaken,</h3>
+                    <h4>Suiça</h4>
+                </div>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quis.</p>
+                <form class="formcard" target="blank" action="#">
+
+                    <button class="botaocard" type="submit">
+                        Abrir
+                    </button>
+
+                </form>
             </div>
 
         </section>
 
     </main>
 
-    <footer id="sobre-nos" class="footer">
+    <footer id="sobrenos">
 
-        <section class="section-footer">
+        <div class="nav-footer">
 
-            <nav class="nav-footer">
+            <h3>Hilquias Pires</h3>
+            <p>Responsável pelo desenvolvimento geral</p>
 
-                <a href="https://github.com/Hilquiaspires">
-                    <img class="logogit" src="./img/icon github.png" alt="logo github">
-                </a>
+        </div>
 
-            </nav>
+        <a href="https://github.com/Hilquiaspires">
+            <img class="logogit" src="./img/github.png" alt="Logo Github">
+        </a>
 
-            <h2 class="github">
-                Github
-            </h2>
-
-        </section>
+        <p class="date">Site feito em 24/09/2022</p>
 
     </footer>
 
